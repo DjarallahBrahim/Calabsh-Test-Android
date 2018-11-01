@@ -14,16 +14,13 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
     - sys-img-armeabi-v7a-android-22
-
  licenses:
  - android-sdk-preview-license-.+
  - android-sdk-license-.+
  - google-gdk-license-.+
 before_script:
       - gem install calabash-android
-
       - keytool -genkey -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
-
       - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a -c 32M
       - emulator -avd test -no-audio -no-window &
       - android-wait-for-emulator
