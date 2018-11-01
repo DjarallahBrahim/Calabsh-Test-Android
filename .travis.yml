@@ -10,6 +10,8 @@ android:
     - build-tools-26.0.2
     - android-26
     - extra-android-m2repository
+    - sys-img-armeabi-v7a-android-22
+    - sys-img-armeabi-v7a-android-17
 before_script:
       - gem install calabash-android
 
