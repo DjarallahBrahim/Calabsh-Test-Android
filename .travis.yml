@@ -7,4 +7,5 @@ install:
 
 before_script:
       gem install calabash-android
-      
+script:
+    cd features
