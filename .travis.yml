@@ -1,0 +1,9 @@
+language: java
+
+sudo: enabled
+
+install:
+      sudo apt-get install ruby-full
+
+before_script:
+      gem install calabash-android
