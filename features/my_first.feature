@@ -3,6 +3,8 @@ Feature: Second Version
 
 
   Scenario: Test SlideMenu
+    Then I wait for 40 seconds
+
     Given I wait for the view with tag "navBar" to appear
     Then I swipe left
     Then I wait for the view with tag "questions_Button" to appear
@@ -31,6 +33,7 @@ Feature: Second Version
 
 
   Scenario: Test SlideMenu
+    Then I wait for 40 seconds
     Given I wait for the view with tag "navBar" to appear
     Then I swipe left
     Then I see view with tag "home_Button"
@@ -43,6 +46,8 @@ Feature: Second Version
 
 
   Scenario: Test Overview Screen
+    Then I wait for 40 seconds
+
     Given I wait for the view with tag "navBar" to appear
     Then I see view with tag "overview_CalendarView"
     Then I see view with tag "listOfItemForCalendar"
@@ -52,6 +57,8 @@ Feature: Second Version
     Then I take a screenshots named "QuestionProgressCard"
 
   Scenario: Test Nav-Bar
+    Then I wait for 40 seconds
+
     Given I wait for the view with tag "navBar" to appear
     Then I take a screenshots named "HomeScreen"
     Given I press view with tag "stats_Button"
