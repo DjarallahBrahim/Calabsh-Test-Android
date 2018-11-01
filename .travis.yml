@@ -8,4 +8,4 @@ install:
 before_script:
       gem install calabash-android
 script:
-    cd features
+      calabash-android resign features/netq.apk      
